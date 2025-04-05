@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weekly Quiz</title>
+  <title>Weekly Quiz - Wk1</title>
   <style>
     body {
       font-family: sans-serif;
       padding: 20px;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
+      max-width: 600px;
+      margin: auto;
     }
 
     .choice {
@@ -48,14 +44,11 @@
 </head>
 <body>
 
-  <!-- Question as an image -->
-  <div class="question">
-    <img src="https://drive.google.com/uc?export=view&id=1fPldGruWAXyRM9SvyoeXgnTbXIq3-ZAr" alt="Question Image">
-  </div>
+  <h2>🧠 Weekly Quiz – Week 1</h2>
+  <p>Select the best choice below:</p>
 
-  <!-- Multiple Choice Options -->
   <form id="quiz-form">
-    <div class="choice">
+    <div class="choice" id="correct-choice">
       <input type="radio" name="answer" value="A" id="A">
       <label for="A">A. Alteplase</label>
     </div>
@@ -63,9 +56,9 @@
       <input type="radio" name="answer" value="B" id="B">
       <label for="B">B. Atorvastatin</label>
     </div>
-    <div class="choice" id="correct-choice">
+    <div class="choice">
       <input type="radio" name="answer" value="C" id="C">
-      <label for="C">C. Enoxaparin</label> <!-- Assume this is the correct answer -->
+      <label for="C">C. Enoxaparin</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="D" id="D">
@@ -80,7 +73,7 @@
     <button type="button" onclick="toggleSolution()">Show Solution</button>
   </form>
 
-  <!-- Solution as image -->
+  <!-- Solution as an image -->
   <div class="solution" id="solution-box">
     <img src="https://drive.google.com/uc?export=view&id=1N7uV-WkWN3MGyP5SuYy6ZNLaaqiqh_jW" alt="Solution Image">
   </div>
@@ -95,7 +88,7 @@
 
       const value = selected.value;
 
-      if (value === 'C') { // Change 'C' if correct answer is different
+      if (value === 'A') {
         selected.parentElement.classList.add('correct');
       } else {
         selected.parentElement.classList.add('incorrect');
@@ -111,3 +104,4 @@
 
 </body>
 </html>
+
