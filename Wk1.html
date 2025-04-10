@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weekly Quiz - Wk1</title>
+  <title>Weekly Quiz - Wk2</title>
   <style>
     body {
       font-family: sans-serif;
@@ -44,40 +44,39 @@
 </head>
 <body>
 
-  <h2>🧠 Weekly Quiz – Week 1</h2>
+  <h2>🧠 Weekly Quiz – Week 2</h2>
   <p>Select the best choice below:</p>
 
   <form id="quiz-form">
-    <div class="choice" id="correct-choice">
-      <input type="radio" name="answer" value="A" id="A">
-      <label for="A">A. Alteplase</label>
-    </div>
     <div class="choice">
+      <input type="radio" name="answer" value="A" id="A">
+      <label for="A">A. Anti-HIV</label>
+    </div>
+    <div class="choice" id="correct-choice">
       <input type="radio" name="answer" value="B" id="B">
-      <label for="B">B. Atorvastatin</label>
+      <label for="B">B. Bone Marrow Examination</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="C" id="C">
-      <label for="C">C. Enoxaparin</label>
+      <label for="C">C. HBsAg</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="D" id="D">
-      <label for="D">D. Metoprolol</label>
+      <label for="D">D. Anti-HCV</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="E" id="E">
-      <label for="E">E. Isosorbide dinitrate</label>
+      <label for="E">E. Liver function tests</label>
     </div>
 
     <button type="button" onclick="checkAnswer()">Submit Answer</button>
     <button type="button" onclick="toggleSolution()">Show Solution</button>
   </form>
 
-  <!-- Solution as an image -->
   <div class="solution" id="solution-box">
-     <a href="https://drive.google.com/uc?export=view&id=1N7uV-WkWN3MGyP5SuYy6ZNLaaqiqh_jW" target="_blank">
+    <a href="https://drive.google.com/uc?export=view&id=10ZWJ_VbCSZoA_NNI2T1h3sPGAUPCQUF2" target="_blank">
       📎 Click here to view the solution
-     </a>
+    </a>
   </div>
 
   <script>
@@ -90,7 +89,7 @@
 
       const value = selected.value;
 
-      if (value === 'A') {
+      if (value === 'B') {
         selected.parentElement.classList.add('correct');
       } else {
         selected.parentElement.classList.add('incorrect');
@@ -106,4 +105,3 @@
 
 </body>
 </html>
-
