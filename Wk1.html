@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weekly Quiz - Wk2</title>
+  <title>Weekly Quiz - Wk3</title>
   <style>
     body {
       font-family: sans-serif;
@@ -44,29 +44,29 @@
 </head>
 <body>
 
-  <h2>🧠 Weekly Quiz – Week 2</h2>
+  <h2>🧠 Weekly Quiz – Week 3</h2>
   <p>Select the best choice below:</p>
 
   <form id="quiz-form">
     <div class="choice">
       <input type="radio" name="answer" value="A" id="A">
-      <label for="A">A. Anti-HIV</label>
+      <label for="A">A. Prescribe oral Paracetamol (Acetaminophen) and schedule follow-up in 24 hours.</label>
     </div>
-    <div class="choice" id="correct-choice">
+    <div class="choice">
       <input type="radio" name="answer" value="B" id="B">
-      <label for="B">B. Bone Marrow Examination</label>
+      <label for="B">B. Obtain Complete Blood Count (CBC), Urinalysis (UA), prescribe oral Amoxicillin, and discharge home.</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="C" id="C">
-      <label for="C">C. HBsAg</label>
+      <label for="C">C. Obtain CBC, Blood culture, UA, consider administering Ceftriaxone IM once, and schedule close follow-up.</label>
     </div>
-    <div class="choice">
+    <div class="choice" id="correct-choice">
       <input type="radio" name="answer" value="D" id="D">
-      <label for="D">D. Anti-HCV</label>
+      <label for="D">D. Admit to the hospital, obtain CBC, Blood culture, UA, perform Lumbar Puncture (LP) for Cerebrospinal Fluid (CSF) analysis, and start empirical intravenous antibiotics.</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="E" id="E">
-      <label for="E">E. Liver function tests</label>
+      <label for="E">E. Admit to the hospital, administer intravenous fluids for hydration, and observe closely before starting antibiotics.</label>
     </div>
 
     <button type="button" onclick="checkAnswer()">Submit Answer</button>
@@ -89,7 +89,7 @@
 
       const value = selected.value;
 
-      if (value === 'B') {
+      if (value === 'D') {
         selected.parentElement.classList.add('correct');
       } else {
         selected.parentElement.classList.add('incorrect');
