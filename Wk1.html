@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weekly Quiz - Week 7</title>
+  <title>Weekly Quiz - Week 8</title>
   <style>
     body {
       font-family: sans-serif;
@@ -44,29 +44,29 @@
 </head>
 <body>
 
-  <h2>🧠 Weekly Quiz – Week 7</h2>
+  <h2>🧠 Weekly Quiz – Week 8</h2>
   <p>Select the best choice below:</p>
 
   <form id="quiz-form">
     <div class="choice">
       <input type="radio" name="answer" value="A" id="A">
-      <label for="A">A. IV Digoxin</label>
+      <label for="A">A. Attempt another airway visualization technique using video assistance</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="B" id="B">
-      <label for="B">B. IV Diltiazem</label>
+      <label for="B">B. Initiate comfort-only care due to poor prognosis</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="C" id="C">
-      <label for="C">C. IV Amiodarone</label>
-    </div>
-    <div class="choice" id="correct-choice">
-      <input type="radio" name="answer" value="D" id="D">
-      <label for="D">D. Emergent Cardioversion</label>
+      <label for="C">C. Surgically open a lower part of the neck to place a long-term airway</label>
     </div>
     <div class="choice">
+      <input type="radio" name="answer" value="D" id="D">
+      <label for="D">D. Insert a breathing tube through the nose into the trachea</label>
+    </div>
+    <div class="choice" id="correct-choice">
       <input type="radio" name="answer" value="E" id="E">
-      <label for="E">E. Emergent Defibrillation</label>
+      <label for="E">E. Create an emergency opening through the cricothyroid membrane to secure the airway</label>
     </div>
 
     <button type="button" onclick="checkAnswer()">Submit Answer</button>
@@ -74,7 +74,7 @@
   </form>
 
   <div class="solution" id="solution-box">
-    <a href="https://drive.google.com/uc?export=view&id=1gTT8_dbMIdcDUNVd6y4RNzCdDxdmvl7W" target="_blank">
+    <a href="https://drive.google.com/uc?export=view&id=1r8ID01kg1BZqo3mEQ9z33RObK-6rnXjz" target="_blank">
       📎 Click here to view the solution
     </a>
   </div>
@@ -89,7 +89,7 @@
 
       const value = selected.value;
 
-      if (value === 'D') {
+      if (value === 'E') {
         selected.parentElement.classList.add('correct');
       } else {
         selected.parentElement.classList.add('incorrect');
