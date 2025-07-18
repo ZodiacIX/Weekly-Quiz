@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weekly Quiz - Week 10</title>
+  <title>Weekly Quiz - Week 12</title>
   <style>
     body {
       font-family: sans-serif;
@@ -44,29 +44,29 @@
 </head>
 <body>
 
-  <h2>🧠 Weekly Quiz – Week 10</h2>
+  <h2>🧠 Weekly Quiz – Week 12</h2>
   <p>Select the best choice below:</p>
 
   <form id="quiz-form">
     <div class="choice">
       <input type="radio" name="answer" value="A" id="A">
-      <label for="A">A. Prescribe vaginal progesterone only if the cervical length is less than 2.5 cm.</label>
+      <label for="A">A. Oral Azithromycin</label>
     </div>
-    <div class="choice">
+    <div class="choice" id="correct-choice">
       <input type="radio" name="answer" value="B" id="B">
-      <label for="B">B. Prescribe a supplementary ferrous fumarate 200 mg/day to prevent anemia during the second trimester.</label>
+      <label for="B">B. Oral Levofloxacin</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="C" id="C">
-      <label for="C">C. Offer Down syndrome screening with a combined test of ultrasound for nuchal translucency, PAPP-A and free beta-hCG.</label>
+      <label for="C">C. Oral Oseltamivir</label>
     </div>
-    <div class="choice" id="correct-choice">
+    <div class="choice">
       <input type="radio" name="answer" value="D" id="D">
-      <label for="D">D. Administer ASA 150 mg/day until delivery to prevent preeclampsia.</label>
+      <label for="D">D. IV Ceftriaxone + Azithromycin</label>
     </div>
     <div class="choice">
       <input type="radio" name="answer" value="E" id="E">
-      <label for="E">E. Give a diagnosis of gestational hypertension, switch enalapril to methyldopa and send the laboratory tests including CBC, BUN, Cr, urinalysis, AST, ALT and LDH.</label>
+      <label for="E">E. IV Piperacillin/Tazobactam</label>
     </div>
 
     <button type="button" onclick="checkAnswer()">Submit Answer</button>
@@ -89,7 +89,7 @@
 
       const value = selected.value;
 
-      if (value === 'D') {
+      if (value === 'B') {
         selected.parentElement.classList.add('correct');
       } else {
         selected.parentElement.classList.add('incorrect');
